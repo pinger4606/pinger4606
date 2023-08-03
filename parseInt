@@ -1,0 +1,18 @@
+	pic1=parseInt(Math.random()*10);
+			break;
+		case 1:
+			pic1=parseInt(Math.random()*10);
+			do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+			break;
+		case 2:
+			pic1=parseInt(Math.random()*10);
+			do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+			do{ pic3=parseInt(Math.random()*10); }while(pic3==pic1 || pic3==pic2);
+			break;
+	}
+	for(m=1;m<t;++m){
+		spark=new Object();
+		spark.x=x; spark.y=y; spark.z=z;
+		p1=pi*2*Math.random();
+		p2=pi*Math.random();
+		v=sparkV*(1+Math.random()/6)
