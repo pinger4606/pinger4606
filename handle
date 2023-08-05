@@ -1,0 +1,11 @@
+ } 
+  else 
+  { 
+    // handle API Exception 
+    ... 
+  } 
+} 
+finally 
+{ 
+  // clean up Transaction 
+  ApiUtil.disposeTransaction(); 
